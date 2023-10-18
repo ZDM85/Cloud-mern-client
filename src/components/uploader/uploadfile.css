@@ -1,0 +1,36 @@
+.uploadfile {
+  margin-top: 10px;
+  background-color: white;
+  padding: 6px;
+  border-radius: 12px;
+}
+.uploadfile_header {
+  display: flex;
+  justify-content: space-between;
+  height: 1.2rem;
+  align-items: center;
+}
+.uploadfile_remove {
+  height: 1.2rem;
+  width: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.uploadfile_progress_bar {
+  margin-top: 10px;
+  height: 1.4rem;
+  background-color: lightslategray;
+  display: flex;
+  border-radius: 8px;
+}
+.uploadfile_upload_bar {
+  background-color: green;
+  width: 50%;
+  border-radius: 8px;
+}
+.uploadfile_progress {
+  left: 50%;
+  position: absolute;
+  color: white;
+}

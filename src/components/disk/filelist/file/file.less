@@ -1,0 +1,83 @@
+
+
+
+
+.file {
+    display: grid;
+    grid-template-columns: 1fr 4fr repeat(4, 1fr);
+    margin: 10px 0;
+    align-items: center;
+    border-bottom: 3px solid lightgrey;
+
+    &:hover {
+        transform: scale(1.01);
+    }
+
+    &_img {
+        justify-self: center;
+    }
+
+    &_name {
+        grid-column-start: 2;
+    }
+
+    &_date {
+        grid-column-start: 5;
+        justify-self: center;
+    }
+
+    &_size {
+        grid-column-start: 6;
+        justify-self: center;
+    }
+
+    &:hover &_date {
+        grid-column-start: 3;
+        justify-self: center;
+        display: block;
+    }
+
+    &:hover &_size {
+        grid-column-start: 4;
+        justify-self: center;
+        display: block;
+    }
+
+    &_1, &_2{
+        display: none;
+    }
+
+    &:hover &_1 {
+        grid-column-start: 5;
+        display: block;
+    }
+
+    &:hover &_2 {
+        grid-column-start: 6;
+        display: block;
+    }
+}
+
+.fileplate {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    &_img {
+        width: 150px;
+        height: 150px;
+    }
+
+    &_btns {
+        display: none;
+    }
+
+    &:hover &_btns{
+        display: block;
+    }
+
+    
+}

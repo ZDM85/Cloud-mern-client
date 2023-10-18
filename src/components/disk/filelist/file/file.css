@@ -1,0 +1,63 @@
+.file {
+  display: grid;
+  grid-template-columns: 1fr 4fr repeat(4, 1fr);
+  margin: 10px 0;
+  align-items: center;
+  border-bottom: 3px solid lightgrey;
+}
+.file:hover {
+  transform: scale(1.01);
+}
+.file_img {
+  justify-self: center;
+}
+.file_name {
+  grid-column-start: 2;
+}
+.file_date {
+  grid-column-start: 5;
+  justify-self: center;
+}
+.file_size {
+  grid-column-start: 6;
+  justify-self: center;
+}
+.file:hover .file_date {
+  grid-column-start: 3;
+  justify-self: center;
+  display: block;
+}
+.file:hover .file_size {
+  grid-column-start: 4;
+  justify-self: center;
+  display: block;
+}
+.file_1,
+.file_2 {
+  display: none;
+}
+.file:hover .file_1 {
+  grid-column-start: 5;
+  display: block;
+}
+.file:hover .file_2 {
+  grid-column-start: 6;
+  display: block;
+}
+.fileplate {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fileplate_img {
+  width: 150px;
+  height: 150px;
+}
+.fileplate_btns {
+  display: none;
+}
+.fileplate:hover .fileplate_btns {
+  display: block;
+}
